@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Matrix{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+ System.out.println("enter number of rows and columns:");
+        int r = sc.nextInt();
+        int c = sc.nextInt();
+        if(r!=c){
+            System.out.println("please enter a square matrix.");
+            return;
+        }
+        System.out.println("enter elememts:");
+        int myArray[][] = new int[r][c];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+              myArray[i][j] = sc.nextInt(); 
+
+            }
+        }
+        for(int i=0;i<r;i++){
+            for(i
